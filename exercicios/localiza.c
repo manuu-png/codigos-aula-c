@@ -4,7 +4,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "pt_BR.UTF-8");
+  setlocale(LC_ALL, "pt_BR.UTF-8");
 
   int km = 0;
   int dias = 0;
@@ -42,19 +42,21 @@ int main()
     scanf("%s", cupomCliente);
     for (int i = 0; i < 3; i++)
     {
-        if(strcmp(cupomCliente, "ECL_10") == 0){
-            valorDesconto == 10;
-        }
-        if(strcmp(cupomCliente, "ECL_20") == 0){
-            valorDesconto == 20;
-        }
-        if(strcmp(cupomCliente, "ECL_10") == 0){
-            valorDesconto == 30;
-        }
-        
+      if (strcmp(cupomCliente, "ECL_10") == 0)
+      {
+        valorDesconto == 10;
+      }
+      if (strcmp(cupomCliente, "ECL_20") == 0)
+      {
+        valorDesconto == 20;
+      }
+      if (strcmp(cupomCliente, "ECL_10") == 0)
+      {
+        valorDesconto == 30;
+      }
     }
-}
-  
+  }
+
   totalPorKM = (km * VALOR_POR_KM) - valorDesconto;
   totalPorDia = (dias * VALOR_POR_DIA) - valorDesconto;
 
@@ -71,14 +73,16 @@ int main()
   if (totalPorDia < totalPorKM)
   {
     printf("\nsugerimos usar o plano por dia");
-  } else {
+  }
+  else
+  {
     printf("\nsugerimos usar o plano por KM");
   }
-  
+
   printf("\ntenha uma ótima tarde.");
   printf("\n desenvolvido por Emanuelle C.L");
 
 
 
-    return 0;
+  return 0;
 }
